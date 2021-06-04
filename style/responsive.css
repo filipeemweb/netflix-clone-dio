@@ -1,0 +1,104 @@
+@media screen and (max-width: 620px) {
+    #menu {
+        display: block;
+        position: absolute;
+        width: 140px;
+        top: 56px;
+        right: .4rem;
+        background-color: var(--main-black);
+        z-index: 1000;
+        height: 0px;
+        visibility: hidden;
+        overflow-y: hidden;
+        transition: .6s ease;
+    }
+
+    #navbar.active #menu {
+        height: 15vh;
+        visibility: visible;
+        overflow-y: auto;
+    }
+
+    #menu li {
+        display: block;
+        text-align: center;
+        padding: .5rem 0;
+        margin: 0 0.5rem;
+        border-bottom: 1px solid rgba(255, 255, 255, .05);
+    }
+
+    #menu li a {
+        text-align: center;
+    }
+
+    nav #btn-mobile {
+        display: flex;
+        padding: .5rem 1rem;
+        margin-right: 1.3rem;
+        font-size: 1rem;
+        color: var(--light-grey);
+        border: none;
+        background: none;
+        cursor: pointer;
+        gap: .5rem;
+    }
+
+    #hamburger {
+        display: block;
+        border-top: 2px solid;
+        width: 20px;
+    }
+
+    #hamburger::after, #hamburger::before {
+        content: '';
+        display: block;
+        width: 20px;
+        height: 2px;
+        background-color: currentColor;
+        margin-top: 5px;
+        transition: .3s;
+        position: relative;
+    }
+
+    #navbar.active #hamburger {
+        border-top-color: transparent;
+    }
+
+    #navbar.active #hamburger::after {
+        transform: rotate(135deg);
+        top: -7px;
+    }
+
+    #navbar.active #hamburger::before {
+        transform: rotate(-135deg);
+    }
+
+    .botao {
+        margin-top: 5px;
+        width: 250px;
+    }
+
+    main {
+        height: 500px;
+    }
+
+    .filme-principal {
+        height: 100%;
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    .filme-principal {
+        background-position-y: -200px;
+    }
+    
+    .descricao {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .filme-principal {
+        background-position-y: 0px;
+    }
+}

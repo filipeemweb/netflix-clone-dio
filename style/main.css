@@ -34,6 +34,10 @@ header .logo {
     font-size: 40px;
 }
 
+#btn-mobile {
+    display: none;
+}
+
 header nav li {
     display: inline-block;
     margin-right: 10px;
@@ -48,12 +52,16 @@ header nav li a:hover {
     color: var(--white);
 }
 
+main {
+    height: 600px;
+}
+
 /* Filme principal */
 .filme-principal {
     font-size: 16px;
     background: linear-gradient(rgba(0, 0, 0, .50), rgba(0, 0, 0, .50)100%), url("../img/capa-house.jpg");
 
-    height: 400px;
+    height: 100%;
     background-size: cover;
 
     display: flex;
@@ -102,6 +110,10 @@ header nav li a:hover {
 
 .filme-principal .container {
     width: 70%;
+}
+
+.carrosel-filmes {
+    margin-top: 40px;
 }
 
 .box-filme {

@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style/main.css">
     
+    <!-- responsividade -->
+    <link rel="stylesheet" href="style/responsive.css">
+
     <!-- owl css -->
     <link rel="stylesheet" href="style/owl/owl.carousel.min.css">
     <link rel="stylesheet" href="style/owl/owl.theme.default.min.css">
@@ -16,8 +19,11 @@
     <header>
         <div class="container">
             <h2 class="logo">NETFLIX</h2>
-            <nav>
-                <ul>
+            <nav id="navbar">
+                <button aria-label="Abrir menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">Menu
+                    <span id="hamburger"></span>
+                </button>
+                <ul id="menu" role="menu">
                     <li><a href="#">Inicio</a></li>
                     <li><a href="#">Séries</a></li>
                     <li><a href="#">Filmes</a></li>
@@ -81,6 +87,8 @@
         </div>
     </div>
     
+    <script src="js/script.js"></script>
+
     <!-- Font Awesome js -->
     <script src="https://kit.fontawesome.com/cbcd703526.js" crossorigin="anonymous"></script>
     
